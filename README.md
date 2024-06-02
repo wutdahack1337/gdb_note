@@ -21,6 +21,26 @@ Cái nào t xài nhiều thì t mới thêm vô
 
 ## 4. si, ni, finish, break
 
-## 5. gdb srcipting, ~/.gdbinit
-- gdb srcipting: example "debug.gdb", we can using the flag "-x \<PATH_TO_SCRIPT\>"
+## 5. ~/.gdbinit, gdb srcipting
 - ~/.gdbinit: some commands be always executed for any gdb session by putting them in this. "set disassembly-flavor intel" for sure.
+- gdb srcipting: example "debug.gdb", we can using the flag "-x \<PATH_TO_SCRIPT\>". Within gdb scripting, a very powerful construct is breakpoint commands. Consider the following gdb script:
+```
+  start
+  break *main+42
+  commands
+    x/gx $rbp-0x32
+    continue
+  end
+  continue
+```
+```
+  start
+  break *main+42
+  commands
+    silent
+    set $local_variable = *(unsigned long long*)($rbp-0x32)
+    printf "Current value: %llx\n", $local_variable
+    continue
+  end
+  continue
+```
