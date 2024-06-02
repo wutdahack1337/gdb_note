@@ -19,4 +19,4 @@ Cái nào t xài nhiều thì t mới thêm vô
 - disassemble main ("disas main" for short): print all of the instructions of main
 - set disassembly-flavor intel: CORRECT assembly syntax
 
-## 4. 
+## 4. si, ni, finish, break
