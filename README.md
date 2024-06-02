@@ -20,3 +20,7 @@ Cái nào t xài nhiều thì t mới thêm vô
 - set disassembly-flavor intel: CORRECT assembly syntax
 
 ## 4. si, ni, finish, break
+
+## 5. gdb srcipting, ~/.gdbinit
+- gdb srcipting: example "debug.gdb", we can using the flag "-x \<PATH_TO_SCRIPT\>"
+- ~/.gdbinit: some commands be always executed for any gdb session by putting them in this. "set disassembly-flavor intel" for sure.
