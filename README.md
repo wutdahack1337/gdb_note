@@ -8,7 +8,7 @@ Cái nào t xài nhiều thì t mới thêm vô
 - start: to start a program, with a breakpoint set on "main"
 - starti: to start a program, with a breakpoint set in "_start"
 - run: to start a program, with no breakpoint set
-- continue ('c' for short): in order to continue program execution
+- continue ('c' for short): in order to continue program execution until the program hits a breakpoint
 
 ## 2. info registers, print
 - info registers: print the values for all your registers
