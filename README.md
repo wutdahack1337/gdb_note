@@ -19,7 +19,7 @@ Cái nào t xài nhiều thì t mới thêm vô
 - disassemble main ("disas main" for short): print all of the instructions of main
 - set disassembly-flavor intel: CORRECT assembly syntax
 
-## 4. stepi, nexti, finish, break *\<address\>, display/\<n\>\<u\>\<f\>, layout regs
+## 4. stepi, nexti, finish, break *\<address\>, info break, display/\<n\>\<u\>\<f\>, layout regs
 - stepi \<n\> ("si" for short): in order to step forward one instruction
 - nexti \<n\> ("ni" for short): in order to step forward one instruction, while stepping over any function calls
 - finish: in order to finish the currently executing function
@@ -28,6 +28,7 @@ Cái nào t xài nhiều thì t mới thêm vô
 break *main
 break *main + 1337
 ```
+- info break: print all breakpoint out
 - display/\<n\>\<u\>\<f\>: always show you what you want to see
 - layout regs: put gdb into its TUI mode and show you the contents of all of the registers, as well as nearby instruction
 
