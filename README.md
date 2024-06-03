@@ -71,6 +71,7 @@ continue
 ```
 ```
 set $rdi = 0 // to zero out $rdi
+set *(long *) $rsp = 0x1337
 set *((uint64_t *) $rsp) = 0x1234 // to set the first value (64 bits) on the stack to 0x1234
 set *((uint16_t *) 0x31337000) = 0x1337 // to set 2 bytes (16 bits) at 0x31337000 to 0x1337
 ```
