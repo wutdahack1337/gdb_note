@@ -39,7 +39,7 @@ break *main + 1337
 ```
   start
   break *(main+42)
-  commands
+  commands // mỗi khi tới main+42, các lệnh trong này sẽ được thực thi
     x/gx $rbp-0x32
     continue
   end
@@ -48,7 +48,7 @@ break *main + 1337
 ```
   start
   break *(main+42)
-  commands
+  commands // mỗi khi tới main+42, các lệnh trong này sẽ được thực thi
     silent
     set $local_variable = *(unsigned long long*)($rbp-0x32)
     printf "Current value: %llx\n", $local_variable
