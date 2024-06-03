@@ -36,7 +36,7 @@ break *main + 1337
 - gdb srcipting: example "debug.gdb", we can using the flag "-x \<PATH_TO_SCRIPT\>". Within gdb scripting, a very powerful construct is breakpoint commands. Consider the following gdb script:
 ```
   start
-  break *main+42
+  break *(main+42)
   commands
     x/gx $rbp-0x32
     continue
@@ -45,7 +45,7 @@ break *main + 1337
 ```
 ```
   start
-  break *main+42
+  break *(main+42)
   commands
     silent
     set $local_variable = *(unsigned long long*)($rbp-0x32)
@@ -59,7 +59,7 @@ break *main + 1337
 ```
 start
 
-break *main + 686
+break *(main+686)
 commands
         set $rdx = $rax
         continue
