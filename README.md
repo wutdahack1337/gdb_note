@@ -88,3 +88,5 @@ following gdb script:
   end
   continue
 ```
+## 7. call (void)function()
+- call (void)function(): running within this elevated instance of gdb gives you elevated control over the entire system
